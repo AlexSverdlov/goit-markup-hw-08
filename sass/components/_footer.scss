@@ -1,0 +1,131 @@
+footer {
+  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+  color: $secondary-bg-color;
+}
+
+footer h2 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.foot-container {
+  display: flex;
+}
+footer address {
+  margin-top: 20px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.nav-adressitem-foot {
+  color: $secondary-text-color;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.svgnav-item-foot {
+  --color6: white;
+}
+
+.cont_connect {
+  margin-left: 90px;
+}
+
+.cont_connect ul {
+  display: flex;
+}
+
+.buttonlinkfoot {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttonlinkfoot li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.buttonlinkfoot a {
+  display: block;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  background: rgba(255, 255, 255, 0.1);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+
+  &:hover {
+    background-color: $accent-color;
+    color: white;
+  }
+}
+
+.buttonlinkfoot a svg {
+  fill: currentColor;
+}
+
+.cont_rassilka {
+  margin-left: 94px;
+}
+
+.e-mail-foot {
+  display: inline-flex;
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: $secondary-text-color;
+  background-color: #2f303a;
+  border: 1px solid $secondary-text-color;
+  outline: none;
+}
+
+.button-foot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-left: 10px;
+  background-color: $accent-color;
+  color: $primary-bg-color;
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+
+  &::after {
+    margin-left: 10px;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/iconsend.svg);
+    background-size: contain;
+  }
+  &:hover,
+  &:focus {
+    background-color: #49a5f0;
+  }
+}

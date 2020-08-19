@@ -1,0 +1,41 @@
+address {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.nav-adressitem {
+  display: inline-block;
+  color: $primary-text-color;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    --color5: var(--accent-color);
+    // Переменным css не присваивается значение переменных scss
+    // --color5: $accent-color; - не работает
+  }
+}
+
+.nav-adresscontainer {
+  display: flex;
+  align-items: center;
+}
+
+.svgnav-item {
+  vertical-align: middle;
+}
+
+.nav-adresscontainer li:not(:last-child) {
+  margin-right: 30px;
+}
+
+nav address {
+  margin-left: auto;
+}

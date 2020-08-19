@@ -1,0 +1,27 @@
+/* Установки для всего документа */
+@import "./utils/vars";
+@import "./utils/font";
+@import "./utils/setting";
+
+/* Основной блок навигации */
+@import "./components/navigation";
+/* Блок навигации по адрессу (в шапке и в футере)*/
+@import "./components/adress_tel";
+/* Футер */
+@import "./components/footer";
+/* Модальные окна */
+@import "./components/modal";
+/* Секция Героя */
+@import "./components/hero";
+/* Секция "Наши сильные стороны*/
+@import "./components/ourside";
+/* Секция "Чем  мы занимаемся*/
+@import "./components/ourwork";
+/* Секция "Наша команда*/
+@import "./components/ourteam";
+/* Секция "Постоянные клиенты*/
+@import "./components/ourklients";
+/* Кнопки на странице портфолио */
+@import "./components/button_portfolio";
+/* Секция "Портфолио наших работ*/
+@import "./components/portfolio";
