@@ -16,7 +16,61 @@ footer h2 {
 
 .foot-container {
   display: flex;
+  flex-wrap: wrap;
 }
+
+@media screen and (max-width: 767px) {
+  .cont_adress {
+    text-align: center;
+    width: 100%;
+  }
+  .cont_connect {
+    text-align: center;
+    width: 100%;
+    margin-left: calc(137px - 15px);
+    margin-right: calc(137px - 15px);
+    margin-top: 54px;
+  }
+  .cont_rassilka {
+    text-align: center;
+    width: 100%;
+    // margin-left: calc(px - 15px);
+    // margin-right: calc(166px - 15px);
+    margin-top: 54px;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  .cont_adress {
+    text-align: center;
+    width: calc(50% + 15px - 76px * 2);
+    margin-left: calc(76px - 15px);
+    margin-right: 76px;
+  }
+  .cont_connect {
+    text-align: center;
+    width: calc(50% + 15px - 89px * 2);
+    margin-left: 89px;
+    margin-right: calc(89px - 15px);
+  }
+  .cont_rassilka {
+    text-align: center;
+    width: 100%;
+    margin-left: calc(166px - 15px);
+    margin-right: calc(166px - 15px);
+    margin-top: 54px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .cont_connect {
+    margin-left: 90px;
+  }
+  .cont_rassilka {
+    margin-left: 94px;
+  }
+}
+
 footer address {
   margin-top: 20px;
 }
@@ -41,10 +95,6 @@ footer p {
 
 .svgnav-item-foot {
   --color6: white;
-}
-
-.cont_connect {
-  margin-left: 90px;
 }
 
 .cont_connect ul {
@@ -82,13 +132,20 @@ footer p {
   fill: currentColor;
 }
 
-.cont_rassilka {
-  margin-left: 94px;
+.cont_rassilka div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .e-mail-foot {
   display: inline-flex;
-  width: 358px;
+  width: 100%;
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+  }
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 12px;
@@ -102,6 +159,11 @@ footer p {
 
 .button-foot {
   display: inline-flex;
+  margin-top: 20px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+  }
+
   align-items: center;
   justify-content: center;
   font-weight: bold;

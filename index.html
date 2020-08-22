@@ -469,7 +469,142 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="container foot-container">
+        <div class="cont_adress">
+          <a href="./index.html">
+            <svg class="svgnav-item-foot" width="153" height="31">
+              <use href="./images/symbol-defs.svg#icon-WebStudio"></use>
+            </svg>
+          </a>
+          <address>
+            <p>г. Киев, пр-т Леси Украинки, 26</p>
+            <p>
+              <a href="" class="nav-adressitem-foot"> info@devstudio.com </a>
+            </p>
+            <p>
+              <a href="" class="nav-adressitem-foot"> +38 096 111 11 11 </a>
+            </p>
+          </address>
+        </div>
+        <div class="cont_connect">
+          <h2>Присоединяйтесь</h2>
+          <ul class="buttonlinkfoot">
+            <li>
+              <a href="" aria-label="Instagram">
+                <svg width="45" height="45" viewBox="-18 -18 70 70">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" aria-label="Twitter">
+                <svg width="45" height="45" viewBox="-18 -18 70 70">
+                  <use href="./images/symbol-defs.svg#icon-Twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" aria-label="Facebook">
+                <svg width="45" height="45" viewBox="-18 -18 70 70">
+                  <use href="./images/symbol-defs.svg#icon-Facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" aria-label="Linkedin">
+                <svg width="45" height="45" viewBox="-18 -18 70 70">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="cont_rassilka">
+          <h2>Подпишитесь на рассылку</h2>
+          <div>
+            <input type="email" class="e-mail-foot" placeholder="E-mail" />
+            <button class="button-foot">Подписаться</button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+  <!-- Модальное окно -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <form class="form">
+        <button class="button-close" data-modal-close>
+          <svg class="icon-Close" width="10" height="10">
+            <use href="./images/symbol-defs-modal.svg#icon-Close"></use>
+          </svg>
+        </button>
+        <h2>Оставьте свои данные, мы вам перезвоним</h2>
+        <div class="form-field">
+          <input
+            type="text"
+            class="form-input"
+            name="name"
+            id="name"
+            placeholder=" "
+          />
+          <label for="name" class="form-label">Имя</label>
+          <svg class="icon-Human" width="12" height="12">
+            <use href="./images/symbol-defs-modal.svg#icon-Human"></use>
+          </svg>
+        </div>
 
+        <div class="form-tel">
+          <input
+            type="tel"
+            class="form-inputtel"
+            name="nametel"
+            id="nametel"
+            placeholder=" "
+          />
+          <label for="nametel" class="form-label-tel">Телефон</label>
+          <svg class="icon-Trubka" width="13" height="13">
+            <use href="./images/symbol-defs-modal.svg#icon-Trubka"></use>
+          </svg>
+        </div>
+
+        <div class="form-mail">
+          <input
+            type="email"
+            class="form-inputmail"
+            name="namemail"
+            id="namemail"
+            placeholder=" "
+          />
+          <label for="namemail" class="form-label-mail">Почта</label>
+          <svg class="icon-Konvert" width="15" height="15">
+            <use href="./images/symbol-defs-modal.svg#icon-Konvert"></use>
+          </svg>
+        </div>
+
+        <div class="form-komment">
+          <textarea
+            class="form-areakomment"
+            name="namekomm"
+            id="namekomm"
+            cols="30"
+            rows="10"
+            placeholder=" "
+          ></textarea>
+          <label for="namekomm" class="form-label-komm">Комментарий</label>
+        </div>
+        <div class="form-check">
+          <label class="label-check">
+            <input type="checkbox" class="checkbox" name="checkbox" />
+            <span class="icon"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <a href=""> Условия договора</a>
+          </label>
+        </div>
+        <button type="button" class="form-sendbutton">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>
 </html>
